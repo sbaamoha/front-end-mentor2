@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/input.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                darkBlue: 'hsl(243, 87%, 12%)',
+                desaturatedBlue: "hsl(238, 22%, 44%)",
+                brightBlue: "hsl(224, 93%, 58%)",
+                cyan: "hsl(170, 45%, 43%)"
+              }
+            }
+          }
+        }
+      </script>
     <title>Tailwind Project</title>
 </head>
 <body>
@@ -32,7 +46,7 @@
                         Access them wherever you need, share and collaborate with friends, 
                         family, and co-workers.</p>
                     <input type="text" placeholder="Enter Your Email" class="py-2 px-5 mb-4 block w-full md:inline-block md:w-auto">
-                    <button class="bg-blue-600 text-white px-6 py-2 rounded font-bold text-xl w-full md:inline-block md:w-auto">Get Started</button>
+                    <button class="bg-brightBlue text-white px-6 py-2 rounded font-bold text-xl w-full md:inline-block md:w-auto">Get Started</button>
                 </div>
             </div>
 
@@ -55,7 +69,7 @@
                         Securely share files and folders with friends, family and colleagues for 
                         live collaboration. No email attachments required!</p>
                     <div class="flex items-center justify-center md:justify-start cursor-pointer">
-                        <h3 class="text-green-600 mr-2 border-b-2 inline-block pb-2 text-xl border-b-green-600 mb-5">See how Fylo works </h3>
+                        <h3 class="text-cyan mr-2 border-b-2 inline-block pb-2 text-xl border-b-cyan mb-5">See how Fylo works </h3>
                         <img src="public/images/icon-arrow.svg" alt="" class="w-12">
                     </div>
                     <div class="card rounded shadow-md bg-white  h-auto p-8 my-4">
@@ -76,7 +90,7 @@
         </section>
 
 
-        <section class="bg-purple-500 p-16 md:px-16 md:py-36">
+        <section class="bg-desaturatedBlue p-16 md:px-16 md:py-36">
             <div class="grid md:grid-cols-2 text-center md:text-left">
                 <div>
                     <h2 class="text-white font-bold text-4xl py-5">
@@ -89,13 +103,13 @@
                 </div>
                 <div class="py-5 flex flex-col w-3/4 m-auto md:w-full">
                     <input type="text" placeholder="email@example.com" class="block px-6 py-3">
-                    <button class="bg-blue-600 text-white px-6 py-2 rounded font-bold text-x mt-4 md:w-2/4">Get Started For Free</button>
+                    <button class="bg-brightBlue text-white px-6 py-2 rounded font-bold text-x mt-4 md:w-2/4">Get Started For Free</button>
                 </div>
             </div>
         </section>
     </main>
     
-    <footer class="bg-purple-900 p-9">
+    <footer class="bg-darkBlue p-9">
         <div class="grid md:grid-cols-4 gap-10">
             <div>
                 <img src="public/images/logo.svg" alt="logo">
